@@ -76,7 +76,7 @@ const ConferenceCard = ({ conference, isLeft, isLast }) => {
               <StromIcon />
               <div
                 className={`w-0.5 h-[100px] ${
-                  isLast ? "bg-transparent" : "bg-gray-300"
+                  isLast ? "bg-transparent" : conference?.finished==true?"bg-[#FFC93E]":"bg-gray-300"
                 } mt-2`}
               />
             </div>
