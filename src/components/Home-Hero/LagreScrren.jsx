@@ -1,5 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import BuyTicketIcon from "../shared/svg/BuyTicketIcon";
+import ScrollDownIcon from "../shared/svg/ScrollDownIcon";
+import StarIcon from "../shared/svg/StarIcon";
+import ReactCapIcon from "../shared/svg/ReactCapIcon";
+
 const LagreScrren = () => {
   return (
     <div className="hidden md:flex relative">
@@ -11,39 +16,7 @@ const LagreScrren = () => {
             <div className="relative text-[#111D5E] text-[3rem] lg:text-[4rem] text-end  xl:text-[6.75rem] 3xl:text-[8.75rem] not-italic font-bold leading-none">
               <h1>React</h1>
               <h1>Conference</h1>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="85"
-                height="82"
-                viewBox="0 0 85 82"
-                fill="none"
-                className="absolute -top-[2rem] right-[5rem] lg:right-[8rem] xl:right-[16rem] 2xl:right-[16rem] 3xl:right-[21rem]"
-              >
-                <path
-                  d="M35.2266 20.9158C33.8292 15.8288 32.2924 10.811 30.6868 5.7894"
-                  stroke="#FFC93E"
-                  strokeWidth="2"
-                  strokeMiterlimit="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M25.873 27.7763C22.4883 22.877 18.3515 18.631 14.5168 14.1156"
-                  stroke="#FFC93E"
-                  strokeWidth="2"
-                  strokeMiterlimit="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M19.5007 37.2487C15.0895 34.9979 10.3153 33.1704 5.41798 32.5409"
-                  stroke="#FFC93E"
-                  strokeWidth="2"
-                  strokeMiterlimit="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <ReactCapIcon viewBox="0 0 85 82" className="absolute -top-[2rem] right-[5rem] lg:right-[8rem] xl:right-[16rem] 2xl:right-[16rem] 3xl:right-[21rem] h-[5.125rem] w-[5.3125rem]"/>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="942"
@@ -76,7 +49,7 @@ const LagreScrren = () => {
                   />
                 </div>
 
-                {/* SVG outside so it's not clipped */}
+                {/* SVG outside */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 197 191"
@@ -195,20 +168,7 @@ const LagreScrren = () => {
                 </p>
                 <button className="flex text-[0.875rem] lg:text-[1rem] 2xl:w-[18.3125rem] 2xl:h-[3.75rem] font-[500] px-6 py-2 2xl:py-4 justify-center items-center gap-2 flex-shrink-0 rounded-[1.875rem] bg-[#FFC93E]">
                   Buy Tickets{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M17.5001 3.125C17.5001 2.95924 17.4343 2.80027 17.3171 2.68306C17.1999 2.56585 17.0409 2.5 16.8751 2.5H9.37512C9.20936 2.5 9.05039 2.56585 8.93318 2.68306C8.81597 2.80027 8.75012 2.95924 8.75012 3.125C8.75012 3.29076 8.81597 3.44973 8.93318 3.56694C9.05039 3.68415 9.20936 3.75 9.37512 3.75H15.3664L2.68262 16.4325C2.62451 16.4906 2.57842 16.5596 2.54697 16.6355C2.51552 16.7114 2.49933 16.7928 2.49933 16.875C2.49933 16.9572 2.51552 17.0386 2.54697 17.1145C2.57842 17.1904 2.62451 17.2594 2.68262 17.3175C2.74073 17.3756 2.80972 17.4217 2.88564 17.4532C2.96157 17.4846 3.04294 17.5008 3.12512 17.5008C3.2073 17.5008 3.28868 17.4846 3.3646 17.4532C3.44053 17.4217 3.50951 17.3756 3.56762 17.3175L16.2501 4.63375V10.625C16.2501 10.7908 16.316 10.9497 16.4332 11.0669C16.5504 11.1842 16.7094 11.25 16.8751 11.25C17.0409 11.25 17.1999 11.1842 17.3171 11.0669C17.4343 10.9497 17.5001 10.7908 17.5001 10.625V3.125Z"
-                      fill="#0A142F"
-                    />
-                  </svg>
+                  <BuyTicketIcon height="16" width="16"/>
                 </button>
 
                 <div className="hidden lg:flex pl-[14rem] pt-[0.75rem] xl:pl-[18rem] xl:pt-[4rem] 2xl:pl-[20rem] 3xl:pl-[22rem] 2xl:pt-[5rem]">
@@ -216,22 +176,7 @@ const LagreScrren = () => {
                     <span className="text-[0.875rem] text-[#0A142F] transform -rotate-90 origin-center text-sm whitespace-nowrap">
                       SCROLL DOWN
                     </span>
-                    <svg
-                      width="17"
-                      height="16"
-                      viewBox="0 0 17 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.0316157 0.938778L8.31383 15.284L16.596 0.938778L15.5706 0.938777L8.31383 13.5079L1.05704 0.938777L0.0316157 0.938778Z"
-                        fill="#0A142F"
-                      />
-                      <path
-                        d="M2.26397 0.938778L8.31383 11.4174L14.3637 0.938777L2.26397 0.938778Z"
-                        fill="#0A142F"
-                      />
-                    </svg>
+                    <ScrollDownIcon/>
                   </div>
                 </div>
               </div>
@@ -254,17 +199,7 @@ const LagreScrren = () => {
             </div>
 
             {/* SVG absolutely positioned relative to outer container */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 90 89"
-              fill="none"
-              className="absolute w-20 h-20 -left-[40px] -bottom-[40px] z-10"
-            >
-              <path
-                d="M65.7459 0.870674L52.367 37.621L89.1452 50.923L50.0592 49.5553L48.7734 88.6441L37.9959 51.0485L0.422946 61.9047L32.8481 40.037L10.9125 7.6577L41.7299 31.7383L65.7459 0.870674Z"
-                fill="#FFC93E"
-              />
-            </svg>
+            <StarIcon/>
           </div>
         </div>
       </div>
