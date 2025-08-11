@@ -1,113 +1,93 @@
-import Image from 'next/image'
+import Conference from "@/components/Conferences/Conference";
+import Hero from "@/components/Home-Hero/Hero";
+import Footer from "@/components/shared/Footer";
+import Navbar from "@/components/shared/Navbar";
+import Sponsor from "@/components/Sponsor/Sponsor";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div className="relative overflow-hidden">
+      {/* Responsive Gradient Background Blobs */}
+      <div className="absolute top-0 left-0 w-full h-[150%] -z-10 pointer-events-none">
+        {/* Purple Blob */}
+        <div
+          className="
+            absolute
+            bg-[#7C3EFF]
+            rounded-full
+            blur-[250px]
+            shadow-[500px_500px_500px_rgba(124,62,255,0.4)]
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+            w-[150px] h-[150px] left-[20px] top-[50px]  /* mobile */
+            md:w-[222px] md:h-[222px] md:left-[0px] md:top-[11px]  /* desktop */
+          "
+        />
+        {/* Pink Blob */}
+        <div
+          className="
+            absolute
+            bg-[#BE229C]
+            rounded-full
+            blur-[250px]
+            shadow-[500px_500px_500px_rgba(190,34,156,0.4)]
+
+            w-[120px] h-[120px] left-[200px] top-[30px]
+            md:w-[141px] md:h-[141px] md:left-[290px] md:top-[0px]
+          "
+        />
+        {/* Yellow Blob */}
+        <div
+          className="
+            absolute
+            bg-[#FFC93E]
+            rounded-full
+            blur-[250px]
+            shadow-[500px_500px_500px_rgba(255,201,62,0.4)]
+
+            w-[150px] h-[150px] left-[160px] top-[380px]
+            md:w-[174px] md:h-[174px] md:left-[218px] md:top-[259px]
+          "
         />
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+      {/* Page Content */}
+      <div className="relative">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="488"
+          height="428"
+          viewBox="0 0 488 428"
+          fill="none"
+          className="absolute w-48 md:w-72 lg:w-96 xl:w-[488px] h-auto"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M-2 0H488V428H-2V0ZM-1.23438 0.764286H58.4844V60.3786H-1.23438V0.764286ZM60.0156 0.764286H119.734V60.3786H60.0156V0.764286ZM180.984 0.764286H121.266V60.3786H180.984V0.764286ZM182.516 0.764286H242.234V60.3786H182.516V0.764286ZM303.484 0.764286H243.766V60.3786H303.484V0.764286ZM305.016 0.764286H364.734V60.3786H305.016V0.764286ZM425.984 0.764286H366.266V60.3786H425.984V0.764286ZM427.516 0.764286H487.234V60.3786H427.516V0.764286ZM58.4844 61.9071H-1.23438V121.521H58.4844V61.9071ZM60.0156 61.9071H119.734V121.521H60.0156V61.9071ZM180.984 61.9071H121.266V121.521H180.984V61.9071ZM182.516 61.9071H242.234V121.521H182.516V61.9071ZM303.484 61.9071H243.766V121.521H303.484V61.9071ZM305.016 61.9071H364.734V121.521H305.016V61.9071ZM425.984 61.9071H366.266V121.521H425.984V61.9071ZM427.516 61.9071H487.234V121.521H427.516V61.9071ZM58.4844 123.05H-1.23438V182.664H58.4844V123.05ZM60.0156 123.05H119.734V182.664H60.0156V123.05ZM180.984 123.05H121.266V182.664H180.984V123.05ZM182.516 123.05H242.234V182.664H182.516V123.05ZM303.484 123.05H243.766V182.664H303.484V123.05ZM305.016 123.05H364.734V182.664H305.016V123.05ZM425.984 123.05H366.266V182.664H425.984V123.05ZM427.516 123.05H487.234V182.664H427.516V123.05ZM58.4844 184.193H-1.23438V243.807H58.4844V184.193ZM60.0156 184.193H119.734V243.807H60.0156V184.193ZM180.984 184.193H121.266V243.807H180.984V184.193ZM182.516 184.193H242.234V243.807H182.516V184.193ZM303.484 184.193H243.766V243.807H303.484V184.193ZM305.016 184.193H364.734V243.807H305.016V184.193ZM425.984 184.193H366.266V243.807H425.984V184.193ZM427.516 184.193H487.234V243.807H427.516V184.193ZM58.4844 245.336H-1.23438V304.95H58.4844V245.336ZM60.0156 245.336H119.734V304.95H60.0156V245.336ZM180.984 245.336H121.266V304.95H180.984V245.336ZM182.516 245.336H242.234V304.95H182.516V245.336ZM303.484 245.336H243.766V304.95H303.484V245.336ZM305.016 245.336H364.734V304.95H305.016V245.336ZM425.984 245.336H366.266V304.95H425.984V245.336ZM427.516 245.336H487.234V304.95H427.516V245.336ZM58.4844 306.479H-1.23438V366.093H58.4844V306.479ZM60.0156 306.479H119.734V366.093H60.0156V306.479ZM180.984 306.479H121.266V366.093H180.984V306.479ZM182.516 306.479H242.234V366.093H182.516V306.479ZM303.484 306.479H243.766V366.093H303.484V306.479ZM305.016 306.479H364.734V366.093H305.016V306.479ZM425.984 306.479H366.266V366.093H425.984V306.479ZM427.516 306.479H487.234V366.093H427.516V306.479ZM58.4844 367.621H-1.23438V427.236H58.4844V367.621ZM60.0156 367.621H119.734V427.236H60.0156V367.621ZM180.984 367.621H121.266V427.236H180.984V367.621ZM182.516 367.621H242.234V427.236H182.516V367.621ZM303.484 367.621H243.766V427.236H303.484V367.621ZM305.016 367.621H364.734V427.236H305.016V367.621ZM425.984 367.621H366.266V427.236H425.984V367.621ZM427.516 367.621H487.234V427.236H427.516V367.621Z"
+            fill="url(#paint0_linear_4303_467)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_4303_467"
+              x1="-70"
+              y1="-35.5"
+              x2="243"
+              y2="428"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="white" />
+              <stop offset="0.657437" stopColor="white" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div>
+          <Navbar />
+          <Hero />
+          <Conference />
+          <Sponsor />
+          <Footer />
+        </div>
       </div>
-    </main>
-  )
+    </div>
+  );
 }

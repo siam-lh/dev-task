@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "date": "02 September, 2023",
+    "title": "Freezing Edge 2023",
+    "description": "The edge isn't bleeding, it's freezing!",
+    "finished":true
+  },
+  {
+    "id": 2,
+    "date": "02 September, 2023",
+    "title": "Design systems for beginners",
+    "description": "The workshop will provide you with all the basics",
+    "align": "right"
+  },
+  {
+    "id": 3,
+    "date": "02 September, 2023",
+    "title": "Web Components - Write once & run",
+    "description": "The edge isn't bleeding, it's freezing! ",
+    "finished":false
+  },
+  {
+    "id": 4,
+    "date": "03 September, 2023",
+    "title": "Accessibility testing for developers",
+    "description": "The workshop is split into several modules.",
+    "finished":false
+  },
+  {
+    "id": 5,
+    "date": "03 September, 2023",
+    "title": "The weird things about React",
+    "description": "Conditional rendering issues in JSX, forwardRef",
+    "finished":false
+  }
+]

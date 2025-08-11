@@ -1,0 +1,275 @@
+import React from "react";
+import Image from "next/image";
+const LagreScrren = () => {
+  return (
+    <div className="hidden md:flex relative">
+      <div className="mx-[29px] mt-[5rem] 2xl:mt-[10.8rem] 2xl:mb-[2.38rem] 2xl:ml-[11.5rem] 2xl:mr-[11.6rem] border-red-900">
+        <div className="grid grid-cols-5 gap-[2.29rem]">
+          {/* Left Side contents */}
+          <div className="col-span-3">
+            {/* Header Text */}
+            <div className="relative text-[#111D5E] text-[3rem] lg:text-[4rem] text-end  xl:text-[6.75rem] 3xl:text-[8.75rem] not-italic font-bold leading-none">
+              <h1>React</h1>
+              <h1>Conference</h1>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="85"
+                height="82"
+                viewBox="0 0 85 82"
+                fill="none"
+                className="absolute -top-[2rem] right-[5rem] lg:right-[8rem] xl:right-[16rem] 2xl:right-[16rem] 3xl:right-[21rem]"
+              >
+                <path
+                  d="M35.2266 20.9158C33.8292 15.8288 32.2924 10.811 30.6868 5.7894"
+                  stroke="#FFC93E"
+                  strokeWidth="2"
+                  strokeMiterlimit="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M25.873 27.7763C22.4883 22.877 18.3515 18.631 14.5168 14.1156"
+                  stroke="#FFC93E"
+                  strokeWidth="2"
+                  strokeMiterlimit="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M19.5007 37.2487C15.0895 34.9979 10.3153 33.1704 5.41798 32.5409"
+                  stroke="#FFC93E"
+                  strokeWidth="2"
+                  strokeMiterlimit="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="942"
+                height="834"
+                viewBox="0 0 942 834"
+                fill="none"
+                className="absolute md:top-[-1.75rem] md:right-[-16.85rem] lg:top-[-1.85rem] lg:right-[-20.85rem] xl:top-[-2.25rem] xl:right-[-29.5rem] 2xl:top-[-3rem] 2xl:right-[-33.5rem] 3xl:top-[-3rem] 3xl:right-[-43rem]  md:w-[24rem] lg:w-[30rem] xl:w-[700px] 2xl:w-[780px] 3xl:w-[1000px] h-auto"
+              >
+                <path
+                  d="M1.00012 194.291C109.72 204.968 342.615 196.68 367.765 73.7655C399.201 -79.8775 20.6482 28.4099 247.911 225.237C461.488 410.211 1499.49 310.722 541.323 833"
+                  stroke="#FFC93E"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeDasharray="10 10"
+                />
+              </svg>
+            </div>
+            {/* Paragraph and Button Image */}
+            <div className="grid grid-cols-5 gap-[1rem] lg:gap-[2rem] xl:gap-[4.35rem] mt-4">
+              {/* Image section */}
+
+              <div className="col-span-2 relative">
+                {/* Image container */}
+                <div className="relative w-full aspect-[3/4] lg:aspect-[3/4] 2xl:aspect-[4/5] overflow-hidden rounded-2xl z-[10]">
+                  <Image
+                    src="/hero-image-speaking.png"
+                    alt="Hero"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+
+                {/* SVG outside so it's not clipped */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 197 191"
+                  fill="none"
+                  className="absolute -bottom-[15%] -right-[20%] w-[50%] h-auto z-0"
+                >
+                  <path
+                    d="M60.1012 1.41208C60.7299 1.14322 61.362 0.880734 61.9974 0.624695H135.418C136.053 0.880734 136.685 1.14322 137.314 1.41208H60.1012Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M45.3271 9.28589C45.7367 9.02046 46.1484 8.75799 46.5621 8.49851H150.853C151.267 8.75799 151.679 9.02046 152.088 9.28589H45.3271Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M34.7902 17.1597C35.0988 16.8954 35.409 16.6329 35.7208 16.3723H161.694C162.006 16.6329 162.317 16.8954 162.625 17.1597H34.7902Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M26.6016 25.0335C26.8462 24.7697 27.0922 24.5073 27.3396 24.2461H170.076C170.323 24.5073 170.569 24.7697 170.814 25.0335H26.6016Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M20.027 32.9073C20.2247 32.6439 20.4238 32.3814 20.6241 32.12H176.791C176.992 32.3814 177.191 32.6439 177.388 32.9073H20.027Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M14.6907 40.7812C14.8512 40.5179 15.0128 40.2554 15.1757 39.9938H182.24C182.402 40.2554 182.564 40.5179 182.725 40.7812H14.6907Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M10.3722 48.655C10.5013 48.3919 10.6314 48.1294 10.7627 47.8676H186.653C186.784 48.1294 186.914 48.3919 187.043 48.655H10.3722Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M6.93101 56.5288C7.03245 56.2658 7.13498 56.0033 7.23861 55.7414H190.177C190.28 56.0033 190.383 56.2658 190.484 56.5288H6.93101Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M4.27284 64.4026C4.34931 64.1397 4.42685 63.8772 4.50545 63.6152H192.91C192.988 63.8772 193.066 64.1397 193.142 64.4026H4.27284Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M2.33299 72.2764C2.3863 72.0136 2.44066 71.7511 2.49605 71.4891H194.919C194.975 71.7511 195.029 72.0136 195.082 72.2764H2.33299Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M1.06658 80.1503C1.09798 79.8875 1.13041 79.625 1.16388 79.3629H196.251C196.285 79.625 196.317 79.8875 196.349 80.1503H1.06658Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M0.443031 88.0241C0.453357 87.7613 0.464713 87.4989 0.477093 87.2367H196.938C196.951 87.4989 196.962 87.7613 196.972 88.0241H0.443031Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M0.443031 95.8979C0.432725 95.6357 0.423444 95.3732 0.415192 95.1105H197C196.992 95.3732 196.983 95.6357 196.972 95.8979H0.443031Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M1.06658 103.772C1.03525 103.51 1.00496 103.247 0.975697 102.984H196.44C196.41 103.247 196.38 103.51 196.349 103.772H1.06658Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M2.33299 111.646C2.27983 111.383 2.22772 111.121 2.17664 110.858H195.239C195.188 111.121 195.135 111.383 195.082 111.646H2.33299Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M4.27284 119.519C4.19664 119.257 4.12149 118.995 4.04741 118.732H193.368C193.294 118.995 193.219 119.257 193.142 119.519H4.27284Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M6.93101 127.393C6.82998 127.131 6.73005 126.869 6.63121 126.606H190.784C190.685 126.869 190.585 127.131 190.484 127.393H6.93101Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M10.3722 135.267C10.2439 135.005 10.1166 134.743 9.99049 134.48H187.425C187.299 134.743 187.171 135.005 187.043 135.267H10.3722Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M14.6907 143.141C14.5312 142.879 14.3729 142.617 14.2158 142.353H183.199C183.042 142.617 182.884 142.879 182.725 143.141H14.6907Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M20.027 151.015C19.8307 150.753 19.6358 150.491 19.4421 150.227H177.973C177.78 150.491 177.585 150.753 177.388 151.015H20.027Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M26.6016 158.888C26.3595 158.627 26.1188 158.365 25.8795 158.101H171.536C171.296 158.365 171.056 158.627 170.814 158.888H26.6016Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M34.7902 166.762C34.486 166.502 34.1833 166.239 33.8823 165.975H163.533C163.232 166.239 162.929 166.502 162.625 166.762H34.7902Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M45.3271 174.636C44.9265 174.376 44.5278 174.114 44.1313 173.849H153.284C152.887 174.114 152.489 174.376 152.088 174.636H45.3271Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M60.1012 182.51C59.5009 182.253 58.9038 181.991 58.3097 181.723H139.106C138.512 181.991 137.914 182.253 137.314 182.51H60.1012Z"
+                    fill="#FFC93E"
+                  />
+                  <path
+                    d="M111.206 189.596C107.113 190.116 102.942 190.384 98.7076 190.384C94.4736 190.384 90.3021 190.116 86.209 189.596H111.206Z"
+                    fill="#FFC93E"
+                  />
+                </svg>
+              </div>
+
+              {/* Paragraph plus Buy Tickets button */}
+              <div className="col-span-3 ">
+                <p className="text-black text-[0.875rem] lg:text-[1rem] 2xl:text-[1.125rem] font-normal leading-normal pb-[2rem] lg:pb-[4rem] xl:pb-[5rem]">
+                  Lorem uis diam turpis quam id fermentum.In quis diam turpis
+                  quam id fermentum..id fermentum.In quis diam turpis quam id
+                  fermentum.
+                </p>
+                <button className="flex text-[0.875rem] lg:text-[1rem] 2xl:w-[18.3125rem] 2xl:h-[3.75rem] font-[500] px-6 py-2 2xl:py-4 justify-center items-center gap-2 flex-shrink-0 rounded-[1.875rem] bg-[#FFC93E]">
+                  Buy Tickets{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M17.5001 3.125C17.5001 2.95924 17.4343 2.80027 17.3171 2.68306C17.1999 2.56585 17.0409 2.5 16.8751 2.5H9.37512C9.20936 2.5 9.05039 2.56585 8.93318 2.68306C8.81597 2.80027 8.75012 2.95924 8.75012 3.125C8.75012 3.29076 8.81597 3.44973 8.93318 3.56694C9.05039 3.68415 9.20936 3.75 9.37512 3.75H15.3664L2.68262 16.4325C2.62451 16.4906 2.57842 16.5596 2.54697 16.6355C2.51552 16.7114 2.49933 16.7928 2.49933 16.875C2.49933 16.9572 2.51552 17.0386 2.54697 17.1145C2.57842 17.1904 2.62451 17.2594 2.68262 17.3175C2.74073 17.3756 2.80972 17.4217 2.88564 17.4532C2.96157 17.4846 3.04294 17.5008 3.12512 17.5008C3.2073 17.5008 3.28868 17.4846 3.3646 17.4532C3.44053 17.4217 3.50951 17.3756 3.56762 17.3175L16.2501 4.63375V10.625C16.2501 10.7908 16.316 10.9497 16.4332 11.0669C16.5504 11.1842 16.7094 11.25 16.8751 11.25C17.0409 11.25 17.1999 11.1842 17.3171 11.0669C17.4343 10.9497 17.5001 10.7908 17.5001 10.625V3.125Z"
+                      fill="#0A142F"
+                    />
+                  </svg>
+                </button>
+
+                <div className="hidden lg:flex pl-[14rem] pt-[0.75rem] xl:pl-[18rem] xl:pt-[4rem] 2xl:pl-[20rem] 3xl:pl-[22rem] 2xl:pt-[5rem]">
+                  <div className="flex flex-col items-center gap-12">
+                    <span className="text-[0.875rem] text-[#0A142F] transform -rotate-90 origin-center text-sm whitespace-nowrap">
+                      SCROLL DOWN
+                    </span>
+                    <svg
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.0316157 0.938778L8.31383 15.284L16.596 0.938778L15.5706 0.938777L8.31383 13.5079L1.05704 0.938777L0.0316157 0.938778Z"
+                        fill="#0A142F"
+                      />
+                      <path
+                        d="M2.26397 0.938778L8.31383 11.4174L14.3637 0.938777L2.26397 0.938778Z"
+                        fill="#0A142F"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side Image */}
+          <div className="col-span-2 relative">
+            {/* Placeholder height */}
+            <div className="h-[4rem] lg:h-[4.7rem] 2xl:h-[10rem]"></div>
+            {/* Image container */}
+            <div className="relative h-[calc(100%-4rem)] lg:h-[calc(100%-4.7rem)] 2xl:h-[calc(100%-10rem)] rounded-3xl overflow-hidden z-0">
+              <Image
+                alt="Hero Image"
+                src="/hero-Image-coding.png"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+
+            {/* SVG absolutely positioned relative to outer container */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 90 89"
+              fill="none"
+              className="absolute w-20 h-20 -left-[40px] -bottom-[40px] z-10"
+            >
+              <path
+                d="M65.7459 0.870674L52.367 37.621L89.1452 50.923L50.0592 49.5553L48.7734 88.6441L37.9959 51.0485L0.422946 61.9047L32.8481 40.037L10.9125 7.6577L41.7299 31.7383L65.7459 0.870674Z"
+                fill="#FFC93E"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default LagreScrren;
