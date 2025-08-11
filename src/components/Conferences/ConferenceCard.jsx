@@ -10,7 +10,7 @@ const ConferenceCard = ({ conference, isLeft, isLast }) => {
         {/* Left Column: Icon + Line */}
         <div className="w-1/5 flex flex-col items-center pt-1">
           <div>
-            <StromIcon />
+            <StromIcon isActive={conference?.finished}/>
           </div>
 
           <div className={`w-0.5 min-h-[150px] mt-2 ${
@@ -73,7 +73,7 @@ const ConferenceCard = ({ conference, isLeft, isLast }) => {
 
             {/* Timeline */}
             <div className="flex flex-col items-center justify-start h-full">
-              <StromIcon />
+              <StromIcon isActive={conference?.finished}/>
               <div
                 className={`w-0.5 h-[100px] ${
                   isLast ? "bg-transparent" : conference?.finished==true?"bg-[#FFC93E]":"bg-gray-300"
